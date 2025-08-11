@@ -1,4 +1,34 @@
-Code for paper "Bridging the Capability Gap: Joint Alignment Tuning for Harmonizing LLM-based Multi-Agent Systems"
+# Bridging the Capability Gap: Joint Alignment Tuning for Harmonizing LLM-based Multi-Agent Systems
+
+# Environment
+
+create the `python` env with `conda`
+
+```bash
+conda create -n moat python=3.9
+conda activate moat
+pip install -r requirements.txt
+
+```
+
+# Dataset
+
+We sincerely thank the authors of [Lumos](https://allenai.github.io/lumos/) for their contributions, as our training data and initial model weights are based on their work.
+
+You can download our processed dataset from [Google Drive](https://drive.google.com/drive/folders/1taGoG9iIc4-53gj2sorDMqFnw9mkaVm2?usp=sharing).
+
+
+
+# Our method
+
+Below is an overview of our method.
+
+To run the complete code:
+
+```
+cd {task}
+bash run.sh
+```
 
 
 
@@ -107,3 +137,9 @@ DS_SKIP_CUDA_CHECK=1 deepspeed  Groundin_Agent_Improving/train.py \
     --num_train_epochs 1 \
     --learning_rate 2e-5
 ```
+
+
+
+# Evaluation
+
+We evaluate our method on the benchmark provided by [Lumos](https://allenai.github.io/lumos/).
