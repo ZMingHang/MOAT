@@ -1,0 +1,1 @@
+Code for paper "Bridging the Capability Gap: Joint Alignment Tuning for Harmonizing LLM-based Multi-Agent Systems"
